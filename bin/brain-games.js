@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /* eslint-disable linebreak-style */
 import userName from '../src/cli.js';
 
