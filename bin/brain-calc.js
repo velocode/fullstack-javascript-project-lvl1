@@ -1,13 +1,11 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
 import {
-  start, correctAnswer, userName, answer
+  start, correctAnswer, userName, answer,
 } from '../src/index.js';
 
 start();
 
 let score = 0;
-let result;
 
 while (score < 3) {
   console.log('What is the result of the expression?');
