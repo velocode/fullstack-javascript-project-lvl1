@@ -3,7 +3,7 @@ import {
   start, correctAnswer, userName, answer,
 } from '../src/index.js';
 
-start();
+start(userName);
 
 let score = 0;
 
