@@ -1,7 +1,7 @@
 import {
     start, correctAnswer, answer, userName,
   } from '../src/index.js';
-import random from '../src/utils/random.js'
+import random from '../src/utils/random.js';
 
 const calc = () => {
     const beginning = () => {
