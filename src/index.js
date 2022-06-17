@@ -6,7 +6,7 @@ import answer from "./utils/answer.js";
 const start = () => {
   console.log('Welcome to the Brain Games!');
   
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
    
 };
 const correctAnswer = () => {
