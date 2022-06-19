@@ -1,19 +1,19 @@
 import {
-    start, correctAnswer, answer, userName,
+    start, correctAnswer, yourAnswer,
   } from '../src/index.js';
 import random from '../src/utils/random.js'
 import readlineSync from 'readline-sync';
 
 const even = () => {
-    start();
+  const userName = start();
 
 let score = 0;
 let result;
 while (score < 3) {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log('Answer "yes" if the number is even, otherwise yourAnswer "no".');
   const number = Math.floor(Math.random() * 100);
   console.log(`Question: ${number}`);
-  const answer = readlineSync.question('Your answer: ');
+  const answer = yourAnswer();
 
   if (number % 2 === 0) {
     result = 'yes';

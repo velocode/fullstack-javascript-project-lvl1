@@ -1,18 +1,16 @@
 import {
-    start, correctAnswer, answer, userName,
+    start, correctAnswer, yourAnswer, 
   } from '../src/index.js';
 import random from '../src/utils/random.js';
 
 const calc = () => {
-    const beginning = () => {
-    start();
-  };
+  const userName = start();
   
   let score = 0;
   
   while (score < 3) {
     console.log('What is the result of the expression?');
-    const number = random;
+    const number = Math.floor(Math.random() * 100);
     const number2 = Math.floor(Math.random() * 100);
     const numberForOperator = Math.floor(Math.random() * 3);
     let operator;
@@ -33,9 +31,10 @@ const calc = () => {
       default:
     }
     console.log(`Question: ${number}${operator}${number2}`);
+    const answer = yourAnswer();
     const answer2 = parseInt(answer, 10);
     console.log(result);
-    if (answer === result) {
+    if (answer2 === result) {
       correctAnswer();
       score += 1;
       console.log(score);
