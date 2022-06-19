@@ -10,7 +10,7 @@ const even = () => {
 let score = 0;
 let result;
 while (score < 3) {
-  console.log('Answer "yes" if the number is even, otherwise yourAnswer "no".');
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const number = Math.floor(Math.random() * 100);
   console.log(`Question: ${number}`);
   const answer = yourAnswer();
